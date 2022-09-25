@@ -1,7 +1,8 @@
 import React from "react";
 
 
-const SearchBox = ({searchChange}) => {
+const SearchBox = React.memo(({searchChange}) => {
+  console.log('SearchBox')
   return (
     <div className="pa2">
       <input
@@ -12,6 +13,6 @@ const SearchBox = ({searchChange}) => {
       />
     </div>
   )
-}
+})
 
 export default SearchBox
